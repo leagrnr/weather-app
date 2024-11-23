@@ -61,7 +61,7 @@ const SearchBar = ({ onSearch }) => {
             inputProps={inputProps}
             theme={{
                 container: "autosuggest-container",
-                suggestionsContainer: "suggestions-container",
+                suggestionsContainer: suggestions.length > 0 ? "suggestions-container" : "suggestions-container hidden",
                 suggestion: "suggestion",
                 suggestionHighlighted: "suggestion-highlighted",
             }}
